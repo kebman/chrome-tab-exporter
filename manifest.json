@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Exporter",
+  "description": "Export all open Chrome tabs to JSON",
+  "version": "1.0",
+  "permissions": [
+    "tabs",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Export Tabs"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
